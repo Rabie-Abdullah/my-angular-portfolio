@@ -1,5 +1,8 @@
 # MyPortfolio
 
+![Screenshot from 2022-02-05 01-22-12](https://user-images.githubusercontent.com/95626993/152623948-0b6f168c-f6da-4afd-980a-c77075d71d35.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
 ## Development server
