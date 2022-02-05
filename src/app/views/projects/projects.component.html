@@ -1,0 +1,49 @@
+<div class="section myProjects mt-5" id="myProjects">
+    <div class="container">
+        <h2>My best projects</h2>
+        <div class="row mt-5" *ngIf="frontend" >
+            <div class="col-md-6 col-sm-12  align-items-stretch"  *ngFor="let project of frontend"  data-aos="zoom-in-up"
+            data-aos-duration="1000">
+                <div class="card mb-4" data-aos="fade-right">
+                    <a routerLink="/">
+                        <img src="{{project.image}}" class="card-img-top" alt="">
+                    </a>
+                  <div class="card-body">
+                    <h5 class="card-title">{{project.title}}</h5>
+                    <p class="card-text">{{project.description}}</p>
+
+                    <div class="technology">
+                    <span class="span" *ngFor="let tech of project.technology">{{tech}}</span>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a href="{{project.liveSite}}">Visit Site</a>
+                    <a href="{{project.code}}">View Code</a>
+
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Back end brojects-->
+        <div class="row mt-5 mb-5" *ngIf="backend" >
+            <div class="col-md-6 col-sm-12  align-items-stretch"  *ngFor="let project of backend" data-aos="zoom-in-left">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h5 class="card-title">{{project.title}}</h5>
+                    <p class="card-text">{{project.description}}</p>
+
+                    <div class="technology">
+                    <span class="span" *ngFor="let tech of project.technology">{{tech}}</span>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                      <a href="" >Visit Site</a>
+                      <a href="{{project.code}}" >View Code</a>
+
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

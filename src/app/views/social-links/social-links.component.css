@@ -1,0 +1,57 @@
+.social-links{
+    display: none;
+    background-color: transparent;
+    position: fixed;
+    flex-direction: column;
+    left: 40px;
+    bottom: 0px;
+    font-size: 40px;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    mix-blend-mode: difference;
+    z-index: 55;
+  }
+  a {
+    color: #fff;
+
+  }
+
+ .straight-line {
+    height: 100px;
+    width: 2px;
+    background-color: white;
+  }
+
+
+.my-gmail {
+    position: fixed;
+display: none;
+flex-direction: column;
+right: 40px;
+bottom: 0px;
+-moz-box-pack: center;
+justify-content: center;
+-moz-box-align: center;
+align-items: center;
+mix-blend-mode: difference;
+
+}
+
+
+.gmail {
+    writing-mode: vertical-rl;
+    color: white;
+    mix-blend-mode: difference;
+    margin-bottom: 15px;
+  }
+.gmail a {
+    text-decoration: none;
+}
+@media only screen and (max-width: 1020px) {
+    .my-gmail, .social-links
+     {
+        display: none !important;
+    }
+}

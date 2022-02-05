@@ -1,0 +1,18 @@
+
+.navbar-brand {
+    font-weight: bold;
+}
+.second-alphabet {
+    color: #00de9e;
+}
+
+.nav-item {
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .nav-item:hover {
+        font-size: 20px;
+    }
+}

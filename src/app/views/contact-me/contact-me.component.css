@@ -1,0 +1,49 @@
+.contact-me {
+    margin-bottom: 50px;
+}
+.btn {
+    background-color: #fed766;
+    padding: 5px 70px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 16px;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.30), 0 1px 5px rgba(0,0,0,0.22);
+
+}
+
+.btn:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+.image {
+    height: 400px;
+    margin-left: 50px;
+}
+
+
+#toast-container > div {
+    opacity:1;
+}
+
+.error{
+    color: #fc4b3b;
+}
+.form-control.ng-touched.ng-invalid{
+    border: 2px #fc4b3b solid;
+}
+
+@media only screen and (max-width: 700px) {
+    .contact-me {
+        margin-bottom: 0px;
+    }
+    .btn {
+        margin-bottom: 30px;
+    }
+    .btn {
+        width: 100%;
+    }
+    .image {
+        margin: auto;
+        margin-bottom: 200px;
+    }
+}

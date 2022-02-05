@@ -1,0 +1,65 @@
+<div class="contact-me" id="contact">
+  <div class="container">
+    <div class="row pt-5">
+      <div class="col-lg-6 col-md-12">
+        <h2  data-aos="fade-up">Let's connect.</h2>
+        <p class="pt-1" data-aos="fade-up">
+          If you want to know more about me or my work, or if you would just
+          like to say hello, send me a message. I'd love to hear from you.
+        </p>
+
+        <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>Thanks for contactiong me!</strong> I will replay soon, Inshallah
+          <button (click)="closealert()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <form  #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+          <div class="mb-3" data-aos="fade-up">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              placeholder="Enter your email..."
+              name="email"
+              ngModel
+              #email=ngModel
+              required
+              email
+              (focus)="changeEmail()"
+            />
+            <div class="error d-flex justify-content-center errror" *ngIf="email.touched && email.invalid">
+              <div *ngIf="email.errors?.['required']">*Email is required*</div>
+              <div *ngIf="email.errors?.['email']" 
+              >*Please enter valid email*</div>
+          </div>
+
+          </div>
+          <div class="mb-3" data-aos="fade-up">
+            <label for="textarea">message</label>
+
+            <textarea
+              class="form-control"
+              placeholder="Hey, how`s it going?"
+              id="textarea"
+              style="height: 100px"
+              name="message"
+              ngModel
+              #message=ngModel
+              message
+              required
+              (focus)="changeMessage()"
+            ></textarea>
+            <div class="error d-flex justify-content-center error" *ngIf="message.touched">
+              <div *ngIf="message.errors?.['required']">*Please leave a message*</div>
+          </div>
+          </div>
+          <button data-aos="fade-up" (click)="completeLogin(myForm)" type="submit" [disabled]="myForm.invalid"  class="btn">Send</button>
+        </form>
+      </div>
+      <div class="col-lg-6 col-md-6" data-aos="fade-up">
+        <img class="image" src="assets/projectImages/message.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

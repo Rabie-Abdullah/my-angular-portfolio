@@ -1,0 +1,17 @@
+body {
+    /* background: #dedede; */
+    background-color: #1e2749;
+
+}
+.page-wrap {
+    min-height: 100vh;
+}
+
+i {
+    font-size: 20px;
+    margin-left: 12px;
+}
+.display-1 {
+    color: #fc4b3b;
+    font-weight: bolder;
+}
